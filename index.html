@@ -2,59 +2,77 @@
 <html>
 <head>
     <link href="CSS/style.css" rel="stylesheet">
+    <script src="JS/index.js"></script>
     <title>Maddie Harris</title>
+    <meta charset="UTF-8">
 </head>
 <body>
-  <div class="outer-wrapper">
-    <div class="wrapper">
-     <!-- Side navigation -->
-     <div class="sideNav">
-      <div class="menuIconOpen"></div>
+  <!-- Nav START -->
+    <div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="#">Home</a>
+     <a href="#">About</a>
+     <a href="#">Resume</a>
+     <a href="#">Portfolio</a>
+     <a href="#"></a>
+     <a href="#"></a>
+     <a href="#"></a>
+     <a href="#"></a>
+     <a href="#"></a>
+     <a href="#"></a>
+     <a href="#">Contact</a>
+     <a href="https://www.linkedin.com/public-profile/in/maddie-harris-41a135134/?challengeId=AQH97qanZ7ovWwAAAXahoVmuLFCDARMgUwgGyw7en-O2CLiwJAwvWnpKrZC6hdy471sxUsod2PiZd44s-JVrkyK9FBXUC_DmWA&submissionId=d4169535-c86b-5416-457e-c876fb6ea279">LinkedIn</a>
+     <a href="https://vellissa.github.io/UI-UX-Homework-20/">Behance</a>
+     <a href="https://www.pinterest.com/themaddieharris/">Pinterest</a>
+   </div>
+      <!-- Use any element to open the sidenav -->
+    <div class="origNav" style="z-index: 10;">
+      <span onclick="openNav()"><img src="Images/menuIconOpen.png" style="z-index: 10; margin-top: 72px; margin-bottom: 476px;"></span>
       <div class="menuIconEmail"></div>
-      <div class="menuIconLinkedin"></div>
-      <div class="menuIconBehance"></div>
-      <div class="menuIconPinterest"></div>
+      <div class="menuIconLinkedin" href="https://www.linkedin.com/public-profile/in/maddie-harris-41a135134/?challengeId=AQH97qanZ7ovWwAAAXahoVmuLFCDARMgUwgGyw7en-O2CLiwJAwvWnpKrZC6hdy471sxUsod2PiZd44s-JVrkyK9FBXUC_DmWA&submissionId=d4169535-c86b-5416-457e-c876fb6ea279"></div>
+      <div class="menuIconBehance" href="https://vellissa.github.io/UI-UX-Homework-20/"></div>
+      <div class="menuIconPinterest" href="https://www.pinterest.com/themaddieharris/"></div>
     </div>
-      <!-- (1.) HOME PAGE -->
-      <div class="page one">
-        <!-- Header -->
-        <header>
-          <div class="titleText">
-            <logo class="logo"></logo>
-            <h1 class="titleText">MADDIE HARRIS</h1>
-            <h2 class="titleText">UX Designer</h2>
-            <p class="titleText" style="top: 83.33%";>Feel free to scroll or use the menu to navigate!</p>
-          </div>
-        </header>
+  <!-- Nav END -->
 
-        <!-- Hero Image -->
-          <div class="heroImg" style="top: 100px;"></div>
-        <!-- Background Color -->
-        <style>body {background-color: #ECE9EB;}</style>
+  <!-- (1.0) Home START-->
+  <div class="page" style="background-color: #ece9eb;">
+    <header>
+      <div class="titleText">
+        <logo class="logo" style="margin-left: 240px;"></logo>
+        <h1 class="titleText" style="margin-left: 240px;">MADDIE HARRIS</h1>
+        <h2 class="titleText" style="margin-left: 240px;">UX Designer</h2>
+        <p class="titleText" style="top: 83.33%; margin-left: 240px;">Feel free to scroll or use the menu to navigate!</p>
       </div>
+    </header>
 
-      <!-- (2.) ABOUT ME -->
-      <div class="page two">
-        <div id="gallery">
-          <div class="galleryImages" style="top: 100px;"></div>
-          <div class="button1" style="margin-top: 525px;margin-left: 970px;">My Resume</div>
-          <div class="button1" style="margin-top: 525px;margin-left: 1250px;">Contact Me</div>
-          <h3 style="margin-top:300px; margin-left:970px;">HEY THERE!</h3>
-          <h3 style="margin-left:970px;">I'M MADDIE HARRIS</h3>
-          <p style="width: 540px; margin-top:44px; margin-left:970px;">Maddie is a UX Designer with a multifaceted skill set rooted in interior, graphic, and brand design. Bachelor of Fine Arts from the Savannah College of Art & Design and a Certificate in UX/UI from the Georgia Institute of Technology. Skilled in wireframing & prototyping, user interface design, Adobe Creative Suite, HTML5, CSS, and more. Enthusiastic and ambitious professional who is passionate about crafting digital solutions to enhance visual design, functionality, and increase user satisfaction. </p>
-          <p style="width: 540px; margin-top: 188px; margin-left: 970px";>Strengths in collaboration, creativity, storytelling, concept development, and implementation. Individually created a mobile travel app by conducting user interviews to drive app functionality and design direction. Enhanced prototypes and features based on guerilla testing and user feedback, which resulted in users having an above satisfactory experience. A strong background in harmonizing the technical and creative components of past and current professions makes her an exceptional addition to any UX team.</p>
-        </div>
-      </div>
+    <!-- Hero Image -->
+      <div class="heroImg" style="top: 100px;"></div>
+  </div>
+  <!-- (1.0) Home END -->
 
-      <!-- (3.) PORTFOLIO -->
-      <div class="page three">
-        <h3 style="display: flex; justify-content: center; margin-top: 100px;">Wanderr Travel App</h3>
-        <div class="portfolioImage" style="margin-left: auto; margin-right: auto;"></div>
-        <div class="button1" style="margin-top: 20px; margin-left: 42vw; margin-right: 42vh;">View on Behance</div>
-      </div>
-
+  <!-- (2.0) About Me START -->
+  <div class="page" style="background-color: #ffffff; height: 100vh;">
+    <div id="gallery" style="padding-left: 220px; padding-top: 100px;">
+      <div class="galleryImages" style="padding-top: 0px;"></div>
+      <h3 style="padding-top:100px; margin-left:770px;">HEY THERE!</h3>
+      <h3 style="margin-left:770px;">I'M MADDIE HARRIS</h3>
+      <p style="width: 540px; margin-top:44px; margin-left:770px;">Maddie is a UX Designer with a multifaceted skill set rooted in interior, graphic, and brand design. Bachelor of Fine Arts from the Savannah College of Art & Design and a Certificate in UX/UI from the Georgia Institute of Technology. Skilled in wireframing & prototyping, user interface design, Adobe Creative Suite, HTML5, CSS, and more. Enthusiastic and ambitious professional who is passionate about crafting digital solutions to enhance visual design, functionality, and increase user satisfaction. </p>
+      <p style="width: 540px; margin-top: 188px; margin-left: 770px";>Strengths in collaboration, creativity, storytelling, concept development, and implementation. Individually created a mobile travel app by conducting user interviews to drive app functionality and design direction. Enhanced prototypes and features based on guerilla testing and user feedback, which resulted in users having an above satisfactory experience. A strong background in harmonizing the technical and creative components of past and current professions makes her an exceptional addition to any UX team.</p>
+      <div class="button1" style="margin-top: 425px;margin-left: 770px;">My Resume</div>
+      <div class="button1" style="margin-top: 425px;margin-left: 1050px;">Contact Me</div>
     </div>
   </div>
+  <!-- (2.0) About Me END -->
+
+  <!-- (3.0) Portfolio START -->
+  <div class="page" style="background-color: #ece9eb;">
+    <h3 style="display: flex; justify-content: center; padding-top: 100px;">Wanderr Travel App</h3>
+    <div class="portfolioImage" style="margin-left: auto; margin-right: auto;"></div>
+    <div class="button1" style="margin-top: 20px; margin-left: 42vw; margin-right: 42vh;" href="https://vellissa.github.io/UI-UX-Homework-20/">View on Behance</div>
+  </div>
+  <!-- (3.0) Portfolio END -->
+
 
 </body>
 </html>
